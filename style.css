@@ -1,12 +1,9 @@
-/* ====== NOXASTRA THEME ====== */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans:wght@400;600&display=swap');
-
+/* ====== NOXASTRA COSMIC UPGRADE ====== */
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: radial-gradient(circle at top, #0a0a1a 0%, #000010 100%);
-  color: #cfd9ff;
-  overflow-x: hidden;
+  background: url('galaxy-bg.jpg') center/cover fixed no-repeat;
+  color: #e0e6ff;
 }
 
 /* NAVBAR */
@@ -14,94 +11,81 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background: rgba(10, 10, 30, 0.8);
-  backdrop-filter: blur(6px);
+  padding: 18px 50px;
+  background: rgba(5, 5, 25, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #4a6aff;
 }
 
-.navbar .logo {
+.logo {
   font-family: 'Cinzel', serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #9bbcff;
-  letter-spacing: 2px;
+  text-shadow: 0 0 12px #4a6aff;
 }
 
+/* NAV LINKS */
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 25px;
 }
 
 .navbar a {
   text-decoration: none;
   color: #cfd9ff;
-  transition: color 0.3s;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 .navbar a:hover {
   color: #7aa0ff;
+  text-shadow: 0 0 8px #4a6aff;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   text-align: center;
-  padding: 120px 20px;
-  background: url('stars-bg.jpg') center/cover no-repeat;
+  padding: 140px 20px;
 }
 
 .hero h1 {
   font-family: 'Cinzel', serif;
   font-size: 5rem;
   color: #b8cfff;
-  text-shadow: 0 0 20px #4a6aff;
+  text-shadow: 0 0 25px #4a6aff;
 }
 
-.hero .tagline {
-  font-size: 1.2rem;
+.tagline {
+  font-size: 1.3rem;
+  margin: 20px 0 40px;
   color: #9bbcff;
-  margin-bottom: 40px;
 }
 
-.buttons .btn {
+/* BUTTONS */
+.btn {
   display: inline-block;
   margin: 10px;
-  padding: 12px 28px;
-  border: 1px solid #4a6aff;
-  border-radius: 6px;
-  color: #cfd9ff;
+  padding: 14px 32px;
+  border-radius: 8px;
   text-decoration: none;
-  transition: background 0.3s, box-shadow 0.3s;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn.discord {
   background: #5865f2;
+  color: #fff;
+  box-shadow: 0 0 15px #5865f2;
 }
 
-.btn.tryouts:hover {
-  background: #4a6aff;
-  box-shadow: 0 0 15px #4a6aff;
+.btn.tryouts {
+  border: 1px solid #4a6aff;
+  color: #cfd9ff;
 }
 
-/* WELCOME SECTION */
-.welcome {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.welcome h2 {
-  font-family: 'Cinzel', serif;
-  font-size: 2.2rem;
-  color: #b8cfff;
-}
-
-.crew-bounty {
-  margin-top: 40px;
-}
-
-.bounty {
-  font-size: 1.8rem;
-  color: #7aa0ff;
-  text-shadow: 0 0 10px #4a6aff;
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px #4a6aff;
 }
 
 /* FEATURES */
@@ -110,54 +94,34 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  padding: 60px 20px;
-  background: linear-gradient(to bottom, #0a0a1a, #000010);
+  padding: 70px 20px;
 }
 
 .feature {
-  width: 220px;
-  text-align: center;
-  background: rgba(20, 20, 40, 0.6);
+  width: 240px;
+  background: rgba(15, 15, 40, 0.7);
   border: 1px solid #4a6aff;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .feature:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 15px #4a6aff;
+  box-shadow: 0 0 18px #4a6aff;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 60px 20px;
-  background: rgba(10, 10, 30, 0.9);
-  color: #9bbcff;
+  background: rgba(5, 5, 25, 0.9);
+  border-top: 1px solid #4a6aff;
 }
 
 footer h4 {
   font-family: 'Cinzel', serif;
   color: #b8cfff;
-}
-
-footer p {
-  font-size: 0.95rem;
-  color: #cfd9ff;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero h1 {
-    font-size: 3rem;
-  }
+  text-shadow: 0 0 10px #4a6aff;
 }
