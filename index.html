@@ -1,146 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOXASTRA | Clan Community</title>
-    <!-- Fonts: Orbitron for titles, Rajdhani for body (futuristic, wide tracking) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Linked CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noxastra</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="navbar">
+    <div class="logo">NOXASTRA</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Roster</a></li>
+        <li><a href="#">Tryouts</a></li>
+        <li><a href="#">Achievements</a></li>
+        <li><a href="#">Rules</a></li>
+        <li><a href="#">Announcements</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- 1. Header / Navigation -->
-    <header class="main-header">
-        <div class="container nav-container">
-            <!-- Left: Logo -->
-            <div class="logo-area">
-                <i class="fa-solid fa-compass logo-icon"></i>
-                <span class="logo-text">NOXASTRA</span>
-            </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>NOXASTRA</h1>
+      <p class="tagline">Forged in darkness. Destined for the seas.</p>
+      <div class="buttons">
+        <a href="#" class="btn discord">Join Our Discord</a>
+        <a href="#" class="btn tryouts">Apply for Tryouts</a>
+      </div>
+    </div>
+  </section>
 
-            <!-- Right: Navigation -->
-            <nav class="nav-links">
-                <a href="#" class="active">HOME</a>
-                <a href="#">ROSTER</a>
-                <a href="#">TRYOUTS</a>
-                <a href="#">ACHIEVEMENTS</a>
-                <a href="#">RULES</a>
-                <a href="#">ANNOUNCEMENTS</a>
-                <a href="#">CONTACT</a>
-            </nav>
-        </div>
-    </header>
+  <section class="welcome">
+    <h2>Welcome to Noxastra</h2>
+    <p>We are a family. We are warriors. We are Noxastra.<br>
+       Our crew is built on strength, loyalty, and ambition.<br>
+       Together, we dominate the seas and rise to the top.</p>
+    <div class="crew-bounty">
+      <h3>Crew Bounty</h3>
+      <p class="bounty">2,567,890,123 ₿</p>
+    </div>
+  </section>
 
-    <!-- 2. Hero Section (Deep Space) -->
-    <section class="hero-section">
-        <div class="hero-content">
-            <!-- Centerpiece Icon (Compass & Moon representation) -->
-            <div class="hero-emblem">
-                <i class="fa-regular fa-circle-notch orbital-ring"></i>
-                <i class="fa-solid fa-compass massive-compass"></i>
-            </div>
+  <section class="features">
+    <div class="feature">
+      <h4>Strong Crew</h4>
+      <p>United by loyalty. Driven by strength.</p>
+    </div>
+    <div class="feature">
+      <h4>Active & Competitive</h4>
+      <p>We train. We fight. We never back down.</p>
+    </div>
+    <div class="feature">
+      <h4>Champions</h4>
+      <p>Victorious in battles. Feared across the seas.</p>
+    </div>
+    <div class="feature">
+      <h4>Ambition</h4>
+      <p>The top is our only destination.</p>
+    </div>
+  </section>
 
-            <h1 class="hero-title">NOXASTRA</h1>
-            <p class="hero-tagline">FORGED IN DARKNESS. DESTINED FOR THE SEAS.</p>
-
-            <div class="cta-group">
-                <a href="#" class="btn btn-discord">
-                    <i class="fa-brands fa-discord"></i> JOIN OUR DISCORD
-                </a>
-                <a href="#" class="btn btn-transparent">
-                    APPLY FOR TRYOUTS
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Middle Section (Divider & Welcome) -->
-    <!-- Using a background image placeholder for the stormy ocean/silhouettes -->
-    <section class="divider-section">
-        <div class="wave-overlay"></div> <!-- CSS overlay for wave effect -->
-        <div class="container content-grid">
-            
-            <!-- Left Column: Welcome -->
-            <div class="welcome-box">
-                <h2>WELCOME TO NOXASTRA</h2>
-                <p>We are more than a clan; we are a warrior family built on strength, loyalty, and unyielding ambition. Navigate the chaos with us.</p>
-            </div>
-
-            <!-- Right Column: Crew Bounty -->
-            <div class="bounty-box">
-                <h3>CREW BOUNTY</h3>
-                <div class="currency-value">
-                    <span class="currency-symbol">₿</span> 2,567,890,123
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- 4. Feature Grid -->
-    <section class="features-section">
-        <div class="container feature-grid">
-            
-            <!-- Card 1 -->
-            <div class="feature-card">
-                <div class="icon-glow"><i class="fa-solid fa-crown"></i></div>
-                <h3>STRONG CREW</h3>
-                <p>United by loyalty. Driven by strength.</p>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="feature-card">
-                <div class="icon-glow"><i class="fa-solid fa-khanda"></i></div> <!-- Crossed swords approx -->
-                <h3>ACTIVE & COMPETITIVE</h3>
-                <p>We train. We fight. We never back down.</p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="feature-card">
-                <div class="icon-glow"><i class="fa-solid fa-trophy"></i></div>
-                <h3>CHAMPIONS</h3>
-                <p>Victorious in battles. Feared across the seas.</p>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="feature-card">
-                <div class="icon-glow"><i class="fa-solid fa-star"></i></div>
-                <h3>AMBITION</h3>
-                <p>The top is our only destination.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- 5. Footer -->
-    <footer class="main-footer">
-        <div class="footer-line"></div> <!-- The gradient divider -->
-        
-        <div class="container footer-content">
-            <!-- Left -->
-            <div class="footer-left">
-                <i class="fa-brands fa-discord"></i>
-                <span>JOIN OUR DISCORD COMMUNITY - Connect with members, get updates, and more!</span>
-            </div>
-
-            <!-- Center -->
-            <div class="footer-center">
-                <i class="fa-solid fa-compass"></i>
-            </div>
-
-            <!-- Right -->
-            <div class="footer-right">
-                <span class="legend-call">BECOME PART OF LEGEND</span>
-                <span class="sub-text">The seas await. Will you rise with us? <i class="fa-solid fa-chevron-right purple-arrow"></i></span>
-            </div>
-        </div>
-    </footer>
-
+  <footer>
+    <div class="footer-content">
+      <div class="discord-community">
+        <h4>Join Our Discord Community</h4>
+        <p>Connect with members, get updates, and more!</p>
+      </div>
+      <div class="legend">
+        <h4>Become Part of Legend</h4>
+        <p>The seas await. Will you rise with us?</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
