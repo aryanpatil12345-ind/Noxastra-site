@@ -1,0 +1,163 @@
+/* ====== NOXASTRA THEME ====== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: radial-gradient(circle at top, #0a0a1a 0%, #000010 100%);
+  color: #cfd9ff;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(10, 10, 30, 0.8);
+  backdrop-filter: blur(6px);
+}
+
+.navbar .logo {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  color: #9bbcff;
+  letter-spacing: 2px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #cfd9ff;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #7aa0ff;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: url('stars-bg.jpg') center/cover no-repeat;
+}
+
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 5rem;
+  color: #b8cfff;
+  text-shadow: 0 0 20px #4a6aff;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  color: #9bbcff;
+  margin-bottom: 40px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 28px;
+  border: 1px solid #4a6aff;
+  border-radius: 6px;
+  color: #cfd9ff;
+  text-decoration: none;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn.discord {
+  background: #5865f2;
+}
+
+.btn.tryouts:hover {
+  background: #4a6aff;
+  box-shadow: 0 0 15px #4a6aff;
+}
+
+/* WELCOME SECTION */
+.welcome {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.welcome h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  color: #b8cfff;
+}
+
+.crew-bounty {
+  margin-top: 40px;
+}
+
+.bounty {
+  font-size: 1.8rem;
+  color: #7aa0ff;
+  text-shadow: 0 0 10px #4a6aff;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #0a0a1a, #000010);
+}
+
+.feature {
+  width: 220px;
+  text-align: center;
+  background: rgba(20, 20, 40, 0.6);
+  border: 1px solid #4a6aff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px #4a6aff;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(10, 10, 30, 0.9);
+  color: #9bbcff;
+}
+
+footer h4 {
+  font-family: 'Cinzel', serif;
+  color: #b8cfff;
+}
+
+footer p {
+  font-size: 0.95rem;
+  color: #cfd9ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
