@@ -1,8 +1,8 @@
-/* ====== NOXASTRA COSMIC UPGRADE ====== */
+/* ===== NEW NOXASTRA THEME ===== */
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: url('galaxy-bg.jpg') center/cover fixed no-repeat;
+  background: #000010;
   color: #e0e6ff;
 }
 
@@ -14,17 +14,15 @@ body {
   padding: 18px 50px;
   background: rgba(5, 5, 25, 0.85);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid #4a6aff;
 }
 
-.logo {
+.logo-text {
   font-family: 'Cinzel', serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #9bbcff;
   text-shadow: 0 0 12px #4a6aff;
 }
 
-/* NAV LINKS */
 .navbar ul {
   list-style: none;
   display: flex;
@@ -34,24 +32,45 @@ body {
 .navbar a {
   text-decoration: none;
   color: #cfd9ff;
-  transition: color 0.3s, text-shadow 0.3s;
+  transition: color 0.3s;
 }
 
 .navbar a:hover {
   color: #7aa0ff;
-  text-shadow: 0 0 8px #4a6aff;
 }
 
 /* HERO */
 .hero {
+  position: relative;
+  height: 100vh;
+  background: url('galaxy-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 140px 20px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,30,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-logo {
+  width: 200px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 20px #4a6aff);
+  animation: pulseGlow 4s infinite;
 }
 
 .hero h1 {
   font-family: 'Cinzel', serif;
-  font-size: 5rem;
-  color: #b8cfff;
+  font-size: 4.5rem;
   text-shadow: 0 0 25px #4a6aff;
 }
 
@@ -61,8 +80,7 @@ body {
   color: #9bbcff;
 }
 
-/* BUTTONS */
-.btn {
+.buttons .btn {
   display: inline-block;
   margin: 10px;
   padding: 14px 32px;
@@ -115,13 +133,14 @@ body {
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
   background: rgba(5, 5, 25, 0.9);
   border-top: 1px solid #4a6aff;
 }
 
-footer h4 {
-  font-family: 'Cinzel', serif;
-  color: #b8cfff;
-  text-shadow: 0 0 10px #4a6aff;
+/* Glow animation */
+@keyframes pulseGlow {
+  0% { filter: drop-shadow(0 0 10px #4a6aff); }
+  50% { filter: drop-shadow(0 0 30px #4a6aff); }
+  100% { filter: drop-shadow(0 0 10px #4a6aff); }
 }
